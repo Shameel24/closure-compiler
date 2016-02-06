@@ -1,0 +1,21 @@
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		int numbr;
+		Scanner in=new Scanner(System.in);
+		numbr=in.nextInt();
+		if(numbr%2==0)
+		System.out.println("even");
+		else
+		System.out.println("odd");
+		
+	}
+}
