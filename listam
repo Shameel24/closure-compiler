@@ -1,0 +1,28 @@
+import java.util.*;
+  
+ class ReverseString
+ {
+    public static void main(String args[])
+    { int a,n,b,sum,temp1;
+       
+       Scanner in = new Scanner(System.in);
+  a= in.nextInt();
+   b= in.nextInt();
+   
+  for(a=a+1;a<b;++a)
+  {
+  temp1=a;
+sum=0;
+
+  while(temp1!=0)
+  {
+      n=temp1%10;
+      sum=sum+(n*n*n);
+      temp1=temp1/10;
+  }
+   if(a==sum)
+    System.out.println(a);
+  }
+       
+    }
+ }
