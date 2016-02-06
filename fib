@@ -1,0 +1,19 @@
+import java.util.*;
+  
+ class ReverseString
+ {
+    public static void main(String args[])
+    { int a=-1,i,b=1,c,n;
+       
+       Scanner in = new Scanner(System.in);
+  n= in.nextInt();
+   for(i=0;i<n;i++)
+   {
+   c=a+b;
+   System.out.println(c);
+   a=b;
+   b=c;
+  
+       
+    }
+ }}
