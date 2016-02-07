@@ -1,0 +1,31 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class hcf
+{ 
+       void hf(int a,int b)
+    { 
+        if(a==b)
+     { 
+       System.out.println(a); 
+     }
+        if(a>b)
+        hf(a-b,b);
+        if(a<b)
+        hf(a,b-a);
+        
+    }
+  
+	public static void main (String[] args) throws java.lang.Exception
+	{ int a,b;
+	    hcf h=new hcf();
+	 Scanner in=new Scanner(System.in);
+	 a=in.nextInt();
+	 b=in.nextInt();
+	 
+	  h.hf(a,b);
+	
+	}
+}
