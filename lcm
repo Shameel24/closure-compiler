@@ -1,0 +1,35 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class hcf
+{ int lcm,temp;
+       void hf(int a,int b)
+    { 
+        if(a==b)
+     { temp=a;
+        
+     }
+        if(a>b)
+        hf(a-b,b);
+        if(a<b)
+        hf(a,b-a);
+        
+    }
+   void lcmfndr(int a,int b)
+    {  hf(a,b);
+        lcm=(a*b)/temp;
+    System.out.println(lcm);
+        
+    } 
+
+	public static void main (String[] args) throws java.lang.Exception
+	{ 
+	    hcf h=new hcf();
+	  
+	 
+	  h.lcmfndr(200,40);
+	
+	}
+}
