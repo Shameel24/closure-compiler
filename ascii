@@ -1,0 +1,24 @@
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+    int i=1;
+System.out.println("Ascii values");
+while(i<277)
+{
+    System.out.printf("ASCII value for %d is %c\n",i,i);
+    i++;
+}
+	
+
+
+	
+}
+}
